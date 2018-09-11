@@ -168,14 +168,17 @@ along with this program.  If not, see http://www.gnu.org/licenses/lgpl.html.
 						}
 					}
 				}else{
-					if($this.css("max-height")!=="none"){
+                    if ($this.css("max-height") !== "none") {
+                        // Fix for 234841 bug: set "max-height" to 850px
+						$this.css("max-height", 850);
 						var percentage=false,maxHeight=parseInt($this.css("max-height"));						
 						if($this.css("max-height").indexOf("%")>=0){
 							percentage=maxHeight,
 							maxHeight=$this.parent().height()*percentage/100;
 						}
 						$this.css("overflow","hidden");
-						mCustomScrollBox.css("max-height",maxHeight);						
+						mCustomScrollBox.css("max-height",maxHeight);
+						
 					}
 				}		
 				$this.mCustomScrollbar("update");
