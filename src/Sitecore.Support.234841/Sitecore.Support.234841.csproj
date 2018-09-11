@@ -60,7 +60,7 @@
     <None Include="web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="sitecore\shell\client\Speak\Assets\lib\ui\deps\CustomScrollbar\jquery.mCustomScrollbar.js" />
+    <Content Include="sitecore\shell\client\Speak\Assets\lib\ui\1.1\deps\CustomScrollbar\jquery.mCustomScrollbar.js" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
